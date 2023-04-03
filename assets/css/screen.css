@@ -41,6 +41,7 @@ production stylesheet in assets/built/screen.css
     --color-border: #e1e1e1;
     --color-wash: #e5eff5;
     --color-darkmode: #151719;
+    --color-background:#F0EADA;
 
     /*
     An accent color is also set by Ghost itself in
@@ -279,8 +280,8 @@ production stylesheet in assets/built/screen.css
     right: 0;
     left: 0;
     z-index: 2000;
-    background-color: green;
-    color: #fff;
+    background-color: var(--color-background);
+    /* color: #fff; */
 }
 
 .gh-head a {
@@ -452,7 +453,7 @@ production stylesheet in assets/built/screen.css
 .gh-head-menu .nav a {
     display: inline-block;
     line-height: 1.7;
-    color: inherit;
+    color: var(--color-darkgrey);
 }
 
 .gh-head-menu .nav a:hover {
