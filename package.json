@@ -21,7 +21,11 @@
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
     "postship": "git fetch && gulp release"
   },
-  "author": "Ghost Foundation <hello@ghost.org> (https://ghost.org/)",
+  "author": {
+    "name": "wagmit.eth",
+    "email": "hello@wagmi.se",
+    "url": "wagmit.se"
+  },
   "gpm": {
     "type": "theme",
     "categories": [
