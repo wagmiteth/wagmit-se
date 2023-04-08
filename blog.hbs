@@ -1,0 +1,15 @@
+{{!< default}}
+ {{#get "posts" filter="tag:blog"}}
+<main id="site-main" class="site-main outer">
+<div class="inner posts">
+    <div class="post-feed">
+               {{#foreach posts}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+        {{/foreach}}
+        </div>
+    </div>
+     {{pagination}}
+     </div>
+     </main>
+    {{/get}}
